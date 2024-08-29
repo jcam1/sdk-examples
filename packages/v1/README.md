@@ -37,6 +37,9 @@ $ yarn run node
 $ yarn run deploy
 ```
 
+> [!TIP]
+> If you get `read ECONNRESET` error, try running steps 3 & 4 again (with cache enabled).
+
 ### 5. Run Code Examples
 
 Finally, let's run our code examples!
