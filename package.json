@@ -1,0 +1,41 @@
+{
+  "name": "@jpyc/sdk-examples",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Code examples for JPYC Node SDKs",
+  "repository": "https://github.com/jcam1/sdk-examples.git",
+  "homepage": "https://github.com/jcam1/sdk-examples.git#readme",
+  "engines": {
+    "node": "^20.12.0",
+    "yarn": "^1.22.22"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "format": "prettier --write",
+    "format:dry-run": "prettier --check"
+  },
+  "devDependencies": {
+    "husky": "9.0.11",
+    "lint-staged": "15.2.9",
+    "prettier": "3.3.3"
+  },
+  "lint-staged": {
+    "*.{md,json,yml}": [
+      "yarn run format README.md"
+    ],
+    ".github/**/*.{md,json,yml}": [
+      "yarn run format .github"
+    ],
+    "packages/v1/**/*.{ts,js}": [
+      "yarn workspace @jpyc/sdk-v1-examples run lint",
+      "yarn workspace @jpyc/sdk-v1-examples run format"
+    ],
+    "packages/v1/**/*.{md,json,yml}": [
+      "yarn workspace @jpyc/sdk-v1-examples run format"
+    ]
+  }
+}

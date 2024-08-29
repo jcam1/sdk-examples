@@ -1,0 +1,13 @@
+# npm
+node_modules
+dist
+.env
+
+# hardhat
+ignition/deployments
+artifacts
+cache
+
+# misc
+.vscode
+.DS_Store
