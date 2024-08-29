@@ -13,20 +13,20 @@ The first thing to do is to build packages.
 $ yarn run compile
 ```
 
-### 2. Run Local Network
-
-Start running local Hardhat network and its accompanying node.
-
-```sh
-$ yarn run node
-```
-
-### 3. Set Environment Variables
+### 2. Set Environment Variables
 
 Run the following commands to generate `.env` file.
 
 ```sh
 $ yarn run env
+```
+
+### 3. Run Local Network
+
+Start running local Hardhat network and its accompanying node.
+
+```sh
+$ yarn run node
 ```
 
 ### 4. Deploy Contracts
