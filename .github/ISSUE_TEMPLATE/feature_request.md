@@ -14,7 +14,7 @@ assignees: ''
 
 ## ❓ Motivation
 
-<!-- Summarize motivation/background of this feature request. Why should our SDK have this feature? -->
+<!-- Summarize motivation/background of this feature request. Why should our code examples have this feature? -->
 
 ## 🎨 Description
 
